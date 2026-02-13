@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #4facfe;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #00c6ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Add Student</h2>
+
+    <form action="#" method="post">
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age" min="1" max="100" required>
+
+        <label for="course">Course</label>
+        <input type="text" id="course" name="course" placeholder="Enter Course" required>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
