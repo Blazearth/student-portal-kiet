@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Access Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Access Portal</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <select id="role">
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="student">Student</option>
+    </select>
+
+    <button onclick="login()">Login</button>
+
+    <div id="message" class="message"></div>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const role = document.getElementById("role").value;
+        const message = document.getElementById("message");
+
+        // Simple fake credentials
+        const adminUser = "admin";
+        const adminPass = "1234";
+
+        const studentUser = "student";
+        const studentPass = "1234";
+
+        if (!username || !password || !role) {
+            message.textContent = "Please fill all fields.";
+            message.className = "message error";
+            return;
+        }
+
+        if (role === "admin" && username === adminUser && password === adminPass) {
+            message.textContent = "Access Granted: Welcome Admin!";
+            message.className = "message success";
+        }
+        else if (role === "student" && username === studentUser && password === studentPass) {
+            message.textContent = "Access Granted: Welcome Student!";
+            message.className = "message success";
+        }
+        else {
+            message.textContent = "Access Denied. Invalid credentials.";
+            message.className = "message error";
+        }
+    }
+</script>
+
+</body>
+</html>
