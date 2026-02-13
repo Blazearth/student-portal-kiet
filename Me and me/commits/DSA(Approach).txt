@@ -1,0 +1,10 @@
+1)Try to complete the whole syllabus with previous one's what you have done throughout the year in normal DSA
+2)The target for above is this month having a good understanding and thorough base level for forming chains in my head
+3)It's easy like assume you have end sem and you are studying from scratch it would be easy to do this sem
+4)Trees you have already done from ads all you need to do is some more of graphs
+5)Think of it like DPP as u used to do in JEE this is very similar and let's claim back what we couldn't that time
+
+ONE MORE IMPORTANT THING IS TO DEVELOP GOOD CODING PRACTICES THE FIRST IDEA SHOULD BE BRUTE FORCE AND THEN IT SHOULD BE OPTIMIZATION...
+
+THE BIGGER GOAL IS TO START WITH CF'S BUT FOR NOW IT'S NOT REALISTIC TO EVEN THINK OF IT HAPPENING FOR ME SO LET'S JUST SAY THIS IS THE 
+BASE MATERIAL AND AFTER THIS WE WILL DO HARDCORE CPP DAILY UNTIL END OF 5th SEM AND SEE WHERE LIFE TAKES U..
